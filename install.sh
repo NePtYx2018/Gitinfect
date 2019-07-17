@@ -1,7 +1,11 @@
 apt install python -y
 apt install zip -y
 unzip Gitinfect.zip
-mv Gitinfect $HOME
+mkdir $HOME/Status
+mv Gitinfect $HOME/Status
+rm -fr Gitinfect
+mv $HOME/Status/Gitinfect $HOME/
+rm -fr Status
 clear
 echo ' _   _      ____  _ __   __'
 echo '| \ | | ___|  _ \| |\ \ / /_  __'
@@ -12,5 +16,5 @@ echo '////////////////////////////////'
 echo '\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\'
 echo ""
 echo "Gracias por descargar Gitinfect..."
-
-
+echo "Gitinfect se encuentra en $HOME/Gitinfect/"
+echo ""
